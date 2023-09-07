@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <title>A Historia da Arte</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="card">
+            <img class="imgs"  th:src="@{/Assents/renascimento.jpg}">
+            <h1 class="titulos">Renascimento</h1>
+            <p class="informacao">O Renascimento foi um período extraordinário na história europeia, que se estendeu
+                aproximadamente do século XIV ao XVI. Marcado por um ressurgimento do interesse pelas artes, ciências e
+                aprendizado clássico da Grécia e Roma antiga</p>
+            <div class="buttons">
+                <button class="buttons">
+                    <a th:href="@{/Renascimento}" class="a start">
+                        <span></span>
+                        <p data-start="good luck!" data-text="Mais!" data-title="Veja"></p>
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="imgs"  th:src="@{/Assents/impressionalismo.jpg}">
+            <h1 class="titulos">Impressionalismo</h1>
+            <p class="informacao">O Impressionismo foi um movimento artístico revolucionário que floresceu principalmente durante o século XIX, na França. Surgindo como uma ocorrência à restrição das convenções artísticas da época<br><br></p>
+            <div class="buttons">
+                <button class="buttons">
+                    <a th:href="@{/Impressionismo}" class="a start">
+                        <span></span>
+                        <p data-start="good luck!" data-text="Mais!" data-title="Veja"></p>
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="imgs"  th:src="@{/Assents/arte contemporânea.jpg}">
+            <h1 class="titulos">Arte contemporânea</h1>
+            <p class="informacao">A arte contemporânea é um termo amplo que se refere à produção artística atual, abrangendo um período que vai do final do século XX até os dias de hoje. <br><br><br><br><br></p>
+            <div class="buttons">
+                <button class="buttons">
+                    <a th:href="@{/ArteContemporanea}" class="a start">
+                        <span></span>
+                        <p data-start="good luck!" data-text="Mais!" data-title="Veja"></p>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

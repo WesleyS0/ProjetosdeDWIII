@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style3.css}" />
+
+    <title>Impressionalismo</title>
+</head>
+<body>
+    <h1> Impressionalismo</h1>
+<p>O Impressionismo foi um movimento artístico que surgiu na França no final do século XIX, principalmente durante as décadas de 1870 e 1880. Esse movimento teve um impacto profundo na pintura, mudando a maneira como os artistas representavam a luz, o coração e a atmosfera em suas obras.
+</p>
+    <ol>
+        <li>Claude Monet: Pintor impressionista francês renomado por suas séries de pinturas que exploram a luz e a atmosfera, como "Nenúfares" e "Mulheres no Jardim". Monet foi um dos fundadores do movimento impressionista e é conhecido por sua habilidade em capturar a luminosidade e as variações sutis de cores.</li>
+        <li>Edgar Degas: Artista impressionista conhecido por suas representações de cenas de dança, bem como de momentos cotidianos da vida parisiense. Suas obras frequentemente apresentam ângulos incomuns e composições dinâmicas, como visto em "Bailarina com Tutu Verde" e "O Café Concerto".</li>
+        <li>Pierre-Auguste Renoir: Pintor cujas pinturas frequentemente retratam cenas alegres e pessoas em momentos de descontração. O estilo característico de Renoir é evidente em obras como "Luncheon of the Boating Party" e "Dança no Moulin de la Galette".</li>
+        <li>Camille Pissarro: Um dos primeiros adeptos do Impressionismo, Pissarro é conhecido por suas paisagens rurais e urbanas. Suas pinturas, como "Paisagem com Vacas" e "Boulevard Montmartre à Noite", demonstram sua busca por capturar as mudanças de luz e atmosfera.</li>
+        <li>Berthe Morisot: Uma das poucas mulheres a alcançar reconhecimento durante o movimento impressionista, Morisot é famosa por suas representações íntimas da vida doméstica e feminina. Suas pinturas, como "O Berço" e "Mulher com Leque", trazem uma sensibilidade única ao estilo.</li>
+    </ol>
+
+
+<p>Esses são apenas alguns exemplos, e cada um desses artistas contribuiu de maneira única para o movimento .</p>
+
+<div class="Obras">
+    <img th:src="@{/imagens/Nenúfares.jpg}" alt="Nenúfares">
+    <p>A série "Nenúfares" é uma das obras mais notáveis de Claude Monet, um dos principais artistas do movimento impressionista. Iniciada no final do século XIX, essa série de pinturas captura a atmosfera e a luz em diferentes momentos do dia em seu jardim em Giverny.
+        <br>
+        Artista: Claude Monet
+        <br>
+        Localização: Várias coleções e museus
+        <br>
+        Criação: Finais do século XIX
+        <br>
+        Material: Tinta a óleo
+        <br>
+        Período: Impressionismo
+        <br>
+        Gêneros: Paisagem, Série de pinturas
+    </p>
+
+    <img  th:src="@{/imagens/Dança no Moulin de la Galette.jpg}" alt="Dança no Moulin de la Galette">
+
+    <p>"Dança no Moulin de la Galette" é uma obra icônica de Pierre-Auguste Renoir que representa uma cena animada de lazer parisiense. A pintura, concluída em 1876, é um exemplo marcante do estilo de Renoir, com suas pinceladas soltas e luminosidade.
+        <br>
+        Artista: Pierre-Auguste Renoir
+        <br>
+        Localização: Museu d'Orsay
+        <br>
+        Criação: 1876
+        <br>
+        Material: Tinta a óleo
+        <br>
+        Período: Impressionismo
+        <br>
+        Gêneros: Cena de Gênero, Pintura de Figura
+    </p>
+
+    <img  th:src="@{/imagens/Mulher com Leque.jpg}" alt="Mulher com Leque">
+
+    <p>"Mulher com Leque" é um retrato impressionista de Berthe Morisot que exibe a habilidade da artista em capturar a atmosfera e a personalidade de sua modelo. A pintura, concluída em 1874, destaca a sensibilidade única de Morisot no movimento.
+        <br>
+        Artista: Berthe Morisot
+        <br>
+        Localização: Museu de Belas Artes de Boston
+        <br>
+        Criação: 1874
+        <br>
+        Material: Tinta a óleo
+        <br>
+        Período: Impressionismo
+        <br>
+        Gêneros: Retrato, Pintura de Figura
+    </p>
+</div>
+<a th:href="@{/index}">
+    <button>
+        <div class="text">
+            <span></span>
+            <span>Voltar</span>
+            <span></span>
+        </div>
+        <div class="clone">
+            <span></span>
+            <span>Voltar</span>
+            <span></span>
+        </div>
+        <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+    </button>
+</a>
+
+</body>
+</html>

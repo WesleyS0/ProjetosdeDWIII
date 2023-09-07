@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de Cliques</title>
+</head>
+<body>
+<h1>Contador de Cliques</h1>
+<p>Clique na tela para contar:</p>
+<p>Contagem atual: <span id="contador">0</span></p>
+
+<script>
+    // Inicialize o contador em 0
+    let contador = 0;
+
+    @SpringBootApplication
+    @RestController
+
+    @Autowired
+    @Qualifier("Maxdeclick")
+    private String Maxdeclick;
+    const numeroMaximoCliques = Maxdeclick;
+
+    // Obtém a referência para o elemento de contagem
+    const elementoContador = document.getElementById("contador");
+
+    // Função para incrementar o contador
+    function incrementarContador() {
+        contador++;
+
+        // Atualize o texto do contador
+        elementoContador.textContent = contador;
+
+        // Verifique se o número máximo de cliques foi alcançado
+        if (contador >= numeroMaximoCliques) {
+            alert("Você alcançou o número máximo de cliques. O contador será redefinido.");
+            contador = 0; // Reset do contador
+            elementoContador.textContent = contador; // Atualize o texto do contador
+        }
+    }
+
+    // Adicione um ouvinte de evento de clique à janela
+    window.addEventListener("click", incrementarContador);
+</script>
+</body>
+</html>

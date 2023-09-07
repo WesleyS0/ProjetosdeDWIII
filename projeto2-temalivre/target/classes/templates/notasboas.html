@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spring Boot com 3 Rotas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #d1d0cf;
+            background: #161b22;
+        }
+        .conteiner{
+            background: #262e3a;
+            text-align: center;
+            margin-top: 8%;
+            margin-left: 3%;
+            height: 450px;
+            width: 94%;
+            border: 1px solid #d1d0cf;
+
+        }
+        h1,p{
+            color: #ffff;
+            font-size: 1.2rem;
+            line-height: 2.0;
+        }
+        a{
+            color: #e9e6ef;
+            border: 1px solid #161b22;
+            font-size: 1.2rem;
+            transition-delay: inherit;
+        }
+        a:hover{
+            border: 2px solid #7615cb;
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Notas Boas</h1>
+        <p>Nome: <span th:text="${nome}"></span></p>
+        <p>Nota 1: <span th:text="${nota1}"></span></p>
+        <p>Nota 2: <span th:text="${nota2}"></span></p>
+        <p>Média: <span th:text="${media}"></span></p>
+        <p>Status: Aprovado</p>
+        <br><br>
+        <a href="/index">Voltar</a>
+    </div>
+</body>
+</html>
